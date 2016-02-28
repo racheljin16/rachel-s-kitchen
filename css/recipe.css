@@ -1,0 +1,92 @@
+
+/*header*/
+
+#hero-recipe{
+	background-image: url(../images/list-hero-1.jpg);
+	background-size: cover;
+	position: relative;
+	height: 600px;
+	width: 100%;
+	top: 6em;
+}
+
+body{
+	text-align: center;
+}
+
+
+
+
+
+
+
+/*content style*/
+
+.column{
+	width: 83.33334%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 4em;
+}
+.column-inner{
+	width: 57.39167%;
+	margin-left: auto;
+	margin-right: auto;
+}
+p.brief{
+	text-align: left;
+	color: rgba(0,0,0,0.55);
+}
+
+
+ol li{
+	text-align: left;
+	color: #f9aa3c;
+}
+
+.showimg{
+	width: 50%;
+	padding: 10px 0;
+}
+
+.intro{
+	bottom: 5em;
+}
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+	h1{
+		font-size: 1.5em;
+	}
+
+	#hero-recipe{
+		top: 145px;
+	}
+
+	header{
+		height: 750px;
+	}
+
+	h2{
+		font-size: 18px;
+		letter-spacing: 0.5px;
+	}
+	p{
+		font-size: 13px;
+	}
+	ol li{
+		font-size: 0.8em;
+	}
+}
+@media only screen and (max-width:320px){
+
+	.showimg{
+		width: 80%;
+	}
+}

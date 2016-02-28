@@ -1,0 +1,471 @@
+/*gereral rules*/
+
+body{
+	color: rgba(0,0,0,0.9);
+	/*text-align: center;*/
+}
+h1{
+	font-size: 30px;
+	color: #f8f8f8;
+	padding-bottom: 1em;
+	letter-spacing: 1px;
+}
+h2{
+	font-size: 26px;
+	font-family: garamond;
+	letter-spacing: 1px;
+	color: #f9aa3c;
+	text-align: center;
+}
+p{
+	font-size: 16px;
+}
+
+
+
+
+
+
+/*structure*/
+/*header*/
+#wrapper{
+	position: relative; 
+}
+#hero{
+	background-image: url(../images/titleimg2.png);
+	background-size: cover;
+	position: relative;
+	margin: 0;
+}
+
+.title{
+	text-align: left;
+	position: absolute;
+	z-index: 2;
+	left: 2em;
+	top: 12px;
+	cursor: pointer;
+}
+.logo{
+	height: 80px;
+}
+
+
+
+
+.nav-pills{
+	z-index: 1;
+	position: absolute;
+	text-align: right;
+	line-height: 2em;
+	padding-right: 3%;
+	width: 100%;
+	font-size: 0.9em;
+	top: 3em;
+}
+.nav-pills ul{
+	list-style: none;
+	text-transform: uppercase;
+	margin: 0 50px 0 0;
+	padding: 0;
+    float: right;
+}
+.nav-pills li{
+	display: inline;
+	float: right;
+ }
+.nav-pills a{
+	display: inline-block;
+	text-decoration: none;
+	background-color:transparent;
+	letter-spacing: 1px;
+	color:rgba(0,0,0,0.7);
+	padding: 0 .75em;
+	border-radius:0.5em;
+ }
+.nav-pills a:hover, .nav a:active{
+ 	color: #f8f8f8;
+ 	background-color:#f9aa3c;
+ }
+.li-current{
+ 	background-color:#f9aa3c;
+ 	border-radius: 0.5em;
+}
+
+
+
+
+
+
+.intro{
+	z-index: 1;
+    position: absolute;
+    color: #f8f8f8;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    bottom: 8em;
+    text-align: center;
+    padding: 4em 0;
+}
+.name{
+	margin: 0;
+}
+.introtext{
+	font-size: 28px;
+	font-family: garamond;
+	font-style: italic;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+	margin: 0 auto;
+	color:rgba(255,255,255,0.9);
+}
+
+
+
+
+
+
+
+
+/*the scroll indicator style for landing page*/
+
+.arrow-wrap {
+	position:absolute;
+	z-index:1;
+	left:51.2%;
+	bottom:5em;
+	margin-left:-5em;
+	background: #f9aa3c;
+	border-radius: 50%;
+	width:2em;
+	height:2em;
+	padding:3em;
+	font-size:0.5em;
+	display:block;
+	opacity: 0.7;
+	cursor: pointer;
+}
+.arrow-wrap:hover{
+	opacity: 1;
+}
+.arrow {
+	float:left;
+	position:relative;
+	width: 0px;
+	height: 0px;
+	left: -1.4em;
+	top: 0;
+	border-style: solid;
+	border-width: 1.5em 1.5em 0 1.5em;
+	border-color: #ffffff transparent transparent transparent;
+	-webkit-transform:rotate(360deg);
+}
+.arrow:after {
+	content:'';
+	position:absolute;
+	top:-2.2em;
+	left:-2em;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 2em 2em 0 2em;
+	border-color: #f9aa3c transparent transparent transparent;
+	-webkit-transform:rotate(360deg);
+}
+@-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:10%; }
+    20% { top:0; }
+    30% { top:10%; }
+    40% { top:-10%; }
+    50% { top:10%; }
+    60% { top:0; }
+    70% { top:10%; }
+    80% { top:-10%; }
+    90% { top:10%; }
+    100% { top:0; }
+  }
+.arrow-wrap .arrow {
+	-webkit-animation: arrows 2.4s 0.4s;
+	-webkit-animation-delay: 2.8s;
+}
+
+
+
+
+
+
+
+
+
+/*content style*/
+
+.column{
+	width: 83.33334%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.column-padding-top{
+	padding-top: 2em;
+}
+.column-padding-bottom{
+	padding-bottom: 2em;
+}
+.column-padding{
+	padding-top: 2.5em;
+	padding-bottom: .5em;
+}
+.column-inner{
+	width: 57.39167%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+p.brief{
+	text-align: left;
+	color: rgba(0,0,0,0.55);
+}
+
+.specials{
+	display: inline;
+}
+.special{
+	display: inline-block;
+}
+.specialimg{
+	height: 200px;
+	padding: 0 20px;
+	cursor: pointer;
+}
+.choiceimg{
+	height: 320px;
+	padding: 0 20px;
+	cursor: pointer;
+}
+p.subtitle{
+	color: rgba(0,0,0,0.55);
+	cursor: pointer;
+}
+.grey{
+	background-color: rgba(235,235,235,1);
+}
+.contact{
+	background-color: #f9aa3c;
+	width: 100%;
+	height: 100px;
+}
+.sayhi{
+	position: absolute;
+	font-size: 26px;
+	font-style: italic;
+	line-height: 4.5em;
+	text-align: left;
+	color: #f8f8f8;
+	padding-left: 5%;
+}
+.social{
+	background-color: rgba(249,170,60,0.7);
+	width: 100%;
+	/*height: 200px;*/
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+.footnote{
+	font-size: 12px;
+	color: rgba(255,255,255,0.8);
+	padding-top: 20px;
+}
+.icon{
+	height: 30px;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+/*buttons*/
+
+.btn{
+	border: 2px solid;
+	border-radius: 10px;
+	padding: 0.4em 0;
+	font-size: 22px;
+	cursor: pointer;
+}
+.shopbtn{
+	color:rgba(255,255,255,0.6);
+	width: 150px;
+	text-align: center;
+	display: block;
+	margin: 2em auto;
+	text-decoration: none;
+}
+.recipebtn{
+	color: #f9aa3c;
+	width: 150px;
+	text-align: center;
+	display: block;
+	margin: 2em auto;
+}
+.contactbtn{
+	position: absolute;
+	right: 10%;
+    color:rgba(255,255,255,0.6);
+    width: 130px;
+    display: block;
+    margin: 1.5em auto;
+}
+.contactbtn:hover{
+	color: #ffffff;
+}
+.shopbtn:hover, .recipebtn:hover{
+	color: #ffffff;
+	background-color: rgba(249,170,60,0.7);
+	border-color: rgba(249,170,60,0.7);
+}
+
+
+
+
+
+
+
+
+
+/*responsive breakpoints*/
+
+@media only screen and (max-width:800px){
+
+	h1{
+		font-size: 24px;
+		color: #f8f8f8;
+		padding-bottom: 1em;
+		letter-spacing: 1px;
+	}
+	.introtext{
+		font-size: 20px;
+	}
+ 	.arrow{
+ 		border-width: 1.5em 1.5em 0 1.5em;
+ 	}
+ 	h2{
+		font-size: 22px;
+		font-family: garamond;
+		letter-spacing: 1px;
+	}
+	p{
+		font-size: 15px;
+	}
+ 	.arrow-wrap {
+		margin-left:-3.5em;
+	}
+	.showimg{
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width:600px){
+	
+	#toplogo{
+		display: none;
+	}
+	.nav{
+		font-size: 0.9em;
+		top: 1em;
+		padding-right: 0;
+	}
+	.nav ul{
+	    margin: 0;
+	    width: 100%;
+	}
+	.nav li{
+		width: 100%;
+		text-align: center;
+		border-bottom-style: solid;
+		border-bottom-color: white;
+		border-bottom-width: 1px;
+	}
+	.nav a{
+		width: 100%;
+	}
+	.nav a:hover, .nav a:active{
+		background-color: #f9aa3c;
+		color: white;
+	}
+	.nav-pills a {
+		border-radius:0;
+	}
+	h2{
+		font-size: 18px;
+		letter-spacing: 0.5px;
+	}
+	p{
+		font-size: 13px;
+	}
+	.intro{
+		bottom: 8em;
+	}
+	.introtext{
+		font-size: 18px;
+	}
+ 	.contactbtn {
+	    right: 5%;
+	    width: 80px;
+	}
+	.recipebtn{
+		width: 120px;
+	}
+	.contactbtn, .recipebtn{
+	    border: 1px solid;
+	    border-radius: 5px;
+	    padding: 0.3em 0;
+	    font-size: 15px;
+	    margin: 2.2em auto;
+	}
+ 	.sayhi {
+	    position: absolute;
+	    font-size: 20px;
+	    line-height: 5em;
+	    padding-left: 5%;
+	}
+	.footnote {
+	    font-size: 10px;
+	}
+
+	.product-info-overlay {
+		position:static;
+	}
+}
+
+@media only screen and (max-width:320px){
+	.intro{
+		bottom: 5em;
+		padding: 3em 0;
+	}
+	
+	.product-image-featured {
+		background-color:red;
+	}
+	.product-info-overlay {
+		opacity:0;
+		background-color:rgba(255,255,255,0.5);
+		transform: translateY(10%);
+		transition: transform .3s, opacity .2s;
+	}
+	.product-item:hover .product-info-overlay {
+		transform: translateY(0);
+		opacity:1;
+	}
+	.product-item:hover .product-image-featured .product-image {
+		opacity:0.5;
+	}
+
+}

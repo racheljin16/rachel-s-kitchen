@@ -1,0 +1,225 @@
+
+/*header*/
+figure{
+	margin: 0;
+}
+
+header{
+	height: 750px;
+}
+#hero-list{
+	background-image: url(../images/shrimp1.jpg);
+	background-size: cover;
+	position: relative;
+	height: 600px;
+	width: 100%;
+	top: 6em;
+}
+
+
+
+
+h1{
+	font-size: 2.3em;
+	z-index: 1;
+}
+
+h2{
+	font-family: gill sans;
+}
+
+.intro{
+	bottom: 14em;
+}
+
+
+/*nav*/
+
+.nav-horizontal{
+	position: relative;
+	top: 4em;
+}
+
+.nav-horizontal ul {
+	list-style-type:none;
+	padding-left:0;
+
+}
+.nav-horizontal ul:after {
+	clear:both;
+	content:'';
+	display:table;
+}
+.nav-horizontal li {
+	float:left;
+
+	
+}
+
+.nav-horizontal a {
+	display:block;
+	background-color:#f9aa3c;
+	color:white;
+	padding:.5em;
+	position:relative;
+	text-align: center;
+	/*border-top: 1px solid white;*/
+}
+.nav-horizontal a:hover, .nav-horizontal a:active {
+	color: rgba(0,0,0,.9);
+	text-decoration: none;
+}
+
+.nav-horizontal a.active{
+	color: rgba(0,0,0,.9);
+	text-decoration: none;
+}
+
+
+
+/*product*/
+.product-item-all{
+	
+}
+.product-item {
+	box-sizing:border_box;
+	width:100%;
+	
+	position:relative;
+	overflow:hidden;
+
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-bottom: 20%;
+
+
+}
+
+
+.product-image {
+	width:100%;
+	opacity:1;
+	transition:opacity .3s;
+}
+
+.product-title,.product-rating,.product-price,.product-description{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.product-title {
+	font-size:1.2em;
+	font-weight:bold;
+	color: white;
+	padding-top: 2%;
+}
+.product-rating {
+	color:rgba(255,255,255,.7);
+	padding-bottom: 3%;
+}
+.product-price {
+	font-size:1.2em;
+	color: white;
+}
+.product-description{
+	padding-bottom: 2%;
+	color:rgba(255,255,255,.7);
+}
+
+.product-image-featured {
+	width:100%;
+	cursor: pointer;
+}
+.product-info-overlay {
+	position:absolute;
+	bottom:-5%;
+	width:90%;
+}
+
+
+
+#seasonal{
+	display: none;
+}
+#dimsum{
+	display: none;
+}
+#chief{
+	display: none;
+}
+
+
+
+
+@media (max-width:600px) {
+	h1{
+
+		font-size: 1.5em;
+	}
+	.product-info-overlay {
+		position:static;
+	}
+
+	#hero-list{
+		top: 145px;
+	}
+	.nav-pills{
+		top: 0;
+	}
+
+	header{
+		height: 800px;
+	}
+
+	#searchbtn{
+    	top: -8em;
+	}
+
+	.textinput{
+		padding: 10px 30px;
+		font-size:12px;
+
+	}
+	.smbutton {
+		padding: 10px 20px;
+		font-size:12px;
+	
+	}
+	.product-title,.product-rating,.product-price,.product-description{
+		color: rgba(0,0,0,.8);
+	}
+	.product-title{
+		padding-top: 10%;
+		font-size: 1.5em;
+		color: rgba(249,170,60,0.7);
+	}
+	.product-rating{
+		color: rgba(0,0,0,0.7);
+	}
+	.product-price{
+		font-size: 1.4em;
+		color: #f9aa3c;
+	}
+	.product-description{
+		padding-bottom: 10%;
+		font-size: 1.2em;
+	}
+}
+@media (min-width:600px) {
+	.product-info-overlay {
+		background-color: rgba(249,170,60,0.7);
+		transform: translateY(0);
+		transition: transform .3s, opacity .2s;
+	}
+	.product-item:hover .product-info-overlay {
+		transform: translateY(-10%);
+		opacity:1;
+	}
+
+	.product-info-overlay{
+		opacity: 0;
+	}
+	.product-description:hover{
+		opacity: 1;
+	}
+}
