@@ -57,19 +57,19 @@
 	<div id="content">
 		<div class="column column-padding-top">
 			<h2>Our story</h2>
-			<p class="column-inner brief">I'm Rachel, an architect & interactive designer living in the south bay area, California. I love cooking and take it seriously. My kitchen is open to friends every weekend, and you can also order dishes online. All dishes listed here are highly reccomended by frequent customers, and I share my recipes as well. </p>
+			<p class="column-inner brief">I'm Rachel, an architect & interactive designer living in the Bay Area. I love cooking and take it seriously. My kitchen is open to friends every weekend, and you can also order dishes online. All dishes listed here are highly reccomended by frequent customers, and I share my recipes as well. </p>
 		</div>
 
 		<div class="column column-padding-top text-center">
 			<h2>Chief's Choice</h2>
 			<div class="specials">
 				<div class="special">
-					<a href="product_beef.html"><img class="choiceimg" src="images/beef.jpg"></a>
+					<a href=""><img class="choiceimg" src="images/beef.jpg"></a>
 					<p class="subtitle">Pepper Beef</p>
 				</div>
 
 				<div class="special">
-					<a href="product_bun.html"><img class="choiceimg" src="images/bun11.jpg"></a>
+					<a href=""><img class="choiceimg" src="images/bun11.jpg"></a>
 					<p class="subtitle">Eggplant Buns</p>
 				</div>
 			</div>
@@ -79,7 +79,7 @@
 			<h2>Vegan Taste</h2>
 			<div class="specials">
 				<div class="special">
-					<a href="product_cucumber.html"><img class="specialimg" src="images/cucumber.jpg"></a>
+					<a href=""><img class="specialimg" src="images/cucumber.jpg"></a>
 					<p class="subtitle">Cucumber Salad</p>
 				</div>
 
